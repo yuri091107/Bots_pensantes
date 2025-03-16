@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Timer;
 
 public class Sistema {
-    public static int Instrucao() throws InterruptedException {
+    public static void Instrucao() throws InterruptedException {
       
         int[] numeros = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50};
         Random decisao = new Random();
@@ -37,13 +37,15 @@ public class Sistema {
 
             if (contador == 11) {
                 System.out.println("Vencedor PC1");
-                return 0;
+                System.exit(0);
             }
             else if (contador2 == 11) {
                 System.out.println("Vencedor PC2");
-                return 0;
+                System.exit(0);
             }
+            
         }
+        
        
     }
 }
