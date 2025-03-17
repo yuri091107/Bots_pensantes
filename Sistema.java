@@ -6,12 +6,10 @@ public class Sistema {
       
         int[] numeros = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50};
         Random decisao = new Random();
-        Timer tempo = new Timer();
         int Pc1 = decisao.nextInt(numeros.length);
         int Pc2 = decisao.nextInt(numeros.length);
         int contador = 0+1;
         int contador2 = 0+1;
-        int limite = 50;
 
         while (true) {
             System.out.println("Numero escolhido por PC1 " + Pc1);
